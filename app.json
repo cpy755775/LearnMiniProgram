@@ -1,7 +1,34 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/about/about"
+    "pages/about/about",
+    "pages/profile/profile",
+    "pages/category/category"
   ],
-  "sitemapLocation": "sitemap22.json"
+  "window": {
+    "navigationBarBackgroundColor": "#ff5777",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "我的小程序",
+    "backgroundColor": "orange",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "selectedColor": "#ff5777",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "assets/pic/微信图片_20191220160630.png",
+        "selectedIconPath": "assets/pic/微信图片_20191220160648.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "assets/pic/微信图片_20191220160655.png",
+        "selectedIconPath": "assets/pic/微信图片_20191220160701.png"
+      }
+    ]
+  }
 }
