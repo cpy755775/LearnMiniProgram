@@ -1,3 +1,16 @@
 <!--pages/home/home.wxml-->
-<text class="title">Hello World</text>
-<button size="mini">按钮</button>
+
+<!-- 小程序的数据绑定 -->
+<view>Hello {{name}}</view>
+<view>年龄 : {{age}}</view>
+<view>{{students[0].name}}</view>
+<view>{{students[1].name}}</view>
+<view>{{students[2].name}}</view>
+<view>{{students[3].name}}</view>
+<!-- 列表展示 -->
+<!-- 在wxml里面要调用变量，不论是系统自带的还是你写在js里面的   都要用{{}}引用  mustache写法 -->
+<view wx:for='{{students}}'>{{item.id}} -- {{item.name}}--{{item.age}} </view>
+<!-- 事件监听 -->
+<view>目前计数:{{counter}}</view>
+<button size="mini" bindtap="counterAdd">+</button>
+<button size="mini" bindtap="counterDel">-</button>
