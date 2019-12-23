@@ -1,3 +1,20 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello World</text>
 <button size="mini">按钮</button>
+<button size="mini" open-type="getUserInfo" bindgetuserinfo="handlergetUserInfo">获取用户</button>
+<!-- 3.获取用户的第三种方式，仅仅只能展示 -->
+<open-data type="userNickName"></open-data>
+<open-data type="userAvatarUrl" class="touxiang"></open-data>
+<view bindtap="handleViewClick">哈哈哈</view>
+<view>{{city}}</view>
+<view>{{country}}</view>
+<view>{{countryCode}}</view>
+<view>{{city}}</view>
+<view>{{country}}</view>
+<view>{{countryCode}}</view>
+<view>{{city}}</view>
+<view>{{country}}</view>
+<view>{{countryCode}}</view>
+<view>{{city}}</view>
+<view>{{country}}</view>
+<view>{{countryCode}}</view>
