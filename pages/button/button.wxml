@@ -1,0 +1,23 @@
+<!--pages/button/button.wxml-->
+<!-- <text>pages/button/button.wxml</text> -->
+<!-- button基本使用情况  块级元素-->
+<button>按钮</button>
+<!-- size属性:mini    行内块级元素 -->
+<button size="mini">按钮</button>
+<button size="mini">按钮</button>
+<!-- type属性 -->
+<button size="mini" type="primary">按钮</button>
+<button size="mini" type="default">按钮</button>
+<button size="mini" type="warn">按钮</button>
+<!-- plain镂空效果 -->
+<button size="mini" plain="{{true}}">按钮</button>
+<button size="mini" plain>按钮</button>
+<!-- disable不可用 -->
+<button size="mini" disabled="{{true}}">按钮</button>
+<button size="mini" disabled>按钮</button>
+<!-- loading -->
+<button size="mini" loading="{{flag}}">按钮</button>
+<button size="mini" loading>按钮</button>
+<!-- hover-class -->
+<button  hover-class="flag2">按钮</button>
+

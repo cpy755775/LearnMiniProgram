@@ -1,0 +1,22 @@
+<!--pages/text/text.wxml-->
+<!-- <text>pages/text/text.wxml</text> -->
+<!-- 基本使用 -->
+<text>Hello world\n</text>
+<text>你好小程序\n</text>
+
+<!-- selectable:true -->
+<!-- 默认情况text中的文本长按是不能选中的 -->
+<text selectable="{{true}}">哈哈哈哈哈\n</text>
+<text selectable>呵呵呵呵呵\n</text>
+
+<!-- 普通空格就等于nbsp
+ensp是半个中文空格
+emsp是一个中文空格 -->
+<text>AA AAA\n</text>
+<text space="nbsp">AA AAA\n</text>
+<text space="ensp">AA AAA\n</text>
+<text space="emsp">AA AAA\n</text>
+
+<!-- decode编码 -->
+<text decode="{{true}}">5 &gt; 3\n</text>
+<text decode>5 &lt; 3\n</text>
