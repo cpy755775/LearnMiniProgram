@@ -1,0 +1,24 @@
+/* pages/scroll/scroll.wxss */
+/* inline-block  将块级元素 变成 行内块级 元素，使之不会独占一行 */
+/* white-space 设置如何处理此元素内的空白，nowrap文本不会换行，文本会在在同一行上继续，直到遇到 <br> 标签为止。  */
+.container1{
+  background: blue;
+  white-space: nowrap;
+}
+.item1{
+  width: 100px;
+  height: 100px;
+  background: red;
+  margin: 10px;
+  display: inline-block;
+}
+.container2{
+  background: green;
+  height: 250px;
+  margin-top: 20px;
+}
+.item2{
+  background: yellow;
+  height: 100px;
+  margin: 10px;
+}

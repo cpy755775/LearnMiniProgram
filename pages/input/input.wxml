@@ -1,0 +1,46 @@
+<!--pages/input/input.wxml-->
+<!-- <text>pages/input/input.wxml</text> -->
+<input value="aaaaaa"></input>
+<input type="text"></input>
+<input/>
+<view>----------------------------------------------</view>
+<!-- type的值，用户的键盘类型 -->
+<!-- 文本输入 -->
+<input type="text" />
+<!-- 数字输入 -->
+<input type="number" />
+<!-- 身份证 -->
+<input type="idcard" />
+<!-- 数字键盘带小数点 -->
+<input type="digit" />
+<view>----------------------------------------------</view>
+<!-- 输入的样式是密文类型，作用于密码 -->
+<input password />
+<!-- 输入框为空时占位符 -->
+<input placeholder="请输入账号" />
+<!-- 指定 placeholder 的样式 -->
+<input placeholder="请输入密码" placeholder-style="color:#ff5777;" placeholder-class="placeholder1" />
+<view>----------------------------------------------</view>
+<!-- disabled是否禁用 -->
+<input disabled="{{true}}" />
+<!-- maxlength最大输入长度，设置为 -1 的时候不限制最大长度 -->
+<input maxlength="{{-1}}" />
+<!-- cursor-spacing 指定屏幕上光标到键盘的距离，默认是0 -->
+<input cursor-spacing="100"  />
+<input cursor-spacing="200"  />
+<!-- focus获取焦点,一般用于打开APP时，自动获取焦点 -->
+<input focus="true" />
+<!-- confirm-type设置键盘右下角按钮的文字，仅在type='text'时生效 -->
+<input  type="text"  confirm-type="search"  />
+<view>----------------------------------------------</view>
+<!-- 键盘输入时触发，event.detail = {value, cursor, keyCode}，keyCode 为键值，2.1.0 起支持，处理函数可以直接 return 一个字符串，将替换输入框的内容 -->
+<input  type="text"  bindinput="handleInput"  />
+<!-- bindfocus 输入框聚焦时触发，event.detail = { value, height }，height 为键盘高度，在基础库 1.9.90 起支持 -->
+<!-- bindblur失去焦点 -->
+<input  type="text"  bindfocus="handleFocus" bindblur="handleBlur" />
+<!-- bindconfirm点击完成按钮时触发，event.detail = {value: value} -->
+<input  type="text"  bindconfirm="handleConfirm" />
+<!-- bindkeyboardheightchange键盘高度发生变化的时候触发此事件，event.detail = {height: height, duration: duration} -->
+<input  type="text"  bindkeyboardheightchange="handleKeyBoardHeightChange" />
+
+

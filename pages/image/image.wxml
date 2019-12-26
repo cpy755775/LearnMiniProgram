@@ -1,0 +1,39 @@
+<!--pages/image/image.wxml-->
+<!-- <text>pages/image/image.wxml</text> -->
+<!-- image基本使用  <image/> 或者 <image></image>  默认会占用一定的位置   320*240-->
+<image/>   
+<text>aaaa</text>
+<!--src  本地路径/远程地址 -->
+<image src="../../assets/pic/hha.jpg" />
+<!-- 绝对路径以/开头 -->
+<image src="/assets/pic/hha.jpg" />
+<image src="https://dss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3570490195,3009635816&fm=85&app=2&f=JPEG?w=121&h=75&s=EF02448752CB3AEC263A78B203007013" />
+
+<!-- button从手机相册里面选择 -->
+<button bindtap="handleChoosePics">选中图片</button>
+<image src="{{pic1}}"></image>
+
+<view>---------------------------</view>
+<!-- bindload 图片加载完成时执行绑定的方法 -->
+<!-- lazy-load惰性加载，作用：当图片进入上下三屏时才开始加载 -->
+<!-- show-menu-by-longpress长按图片出现菜单，可识别小程序码  -->
+<image wx:for="{{10}}" src="https://dss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3570490195,3009635816&fm=85&app=2&f=JPEG?w=121&h=75&s=EF02448752CB3AEC263A78B203007013" bindload="handlePicLoad1" lazy-load show-menu-by-longpress />
+
+<view>------------------------------------</view>
+<!-- mode属性，默认是scaleToFill这个值  会拉伸把图片展示出来 -->
+<image src="../../assets/pic/fengjing.jpg"  />
+<image src="../../assets/pic/fengjing.jpg" mode="scaleToFill"  />
+<!-- aspectFit 会保持比例，把整张图显示出来 -->
+<image src="../../assets/pic/fengjing.jpg" mode="aspectFit"  />
+<!-- aspectFill 会保持比例，保证把短边显示出来，所以图片通常不完整 -->
+<image src="../../assets/pic/fengjing.jpg" mode="aspectFill"  />
+<!-- widthFix 宽度不变，高度自动变化，保持原图宽高比 -->
+<image src="../../assets/pic/fengjing.jpg" mode="widthFix"  />
+<!-- top  保持原图，只显示中间顶部部分 -->
+<image src="../../assets/pic/fengjing.jpg" mode="top"  />
+
+
+
+
+
+

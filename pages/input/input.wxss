@@ -1,0 +1,6 @@
+/* pages/input/input.wxss */
+/* 上下10px,左右10px */
+input{
+  border: 1px solid red;
+  margin: 10px 10px;
+}
