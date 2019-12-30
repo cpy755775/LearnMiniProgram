@@ -1,0 +1,12 @@
+<!--pages/wxml2/wxml2.wxml-->
+<!-- <text>pages/wxml2/wxml2.wxml</text> -->
+<include src="/template/header.wxml" />
+
+<import src="../../template/template.wxml" />
+<import src="/template/abc.wxml" />
+<template is="tem1"  data="{{tembtn:'按钮',temview:'你好小程序'}}" />
+<template is="tem1"  data="{{tembtn:'点击',temview:'hello'}}" />
+<template is="tem1"  data="{{tembtn:'登录',temview:'world'}}" />
+<template is="tem1"  data="{{tembtn:'警告',temview:'hi'}}" />
+<template is="abc"   />
+<include src="/template/footer.wxml" />

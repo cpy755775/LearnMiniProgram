@@ -1,5 +1,29 @@
 /* pages/home/home.wxss */
+/* ./当前目录，../父级目录，/根目录   */
+@import './style/view.wxss';
+@import './style/searchbar.wxss';
+
 .title {
   color: red;
   font-size: 30px;
 }
+.content{
+  background: blue !important;
+}
+/* .view1{
+  width: 100px;
+  height: 100px;
+  background: green;
+}
+.view2{
+  width: 200rpx;
+  height: 200rpx;
+  background: pink;
+}
+.view3{
+  font-size: 32px;
+}
+.view4{
+  font-size: 64rpx;
+} */
+/* 在iphone6上面 2rpx=1px */

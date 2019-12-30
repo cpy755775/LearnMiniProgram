@@ -1,0 +1,5 @@
+
+<template name="tem1">
+  <button size="mini">{{tembtn}}</button>
+  <view>{{temview}}</view>
+</template>
