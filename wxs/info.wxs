@@ -1,0 +1,11 @@
+var name = 'LBJ';
+var age = 35;
+var sum = function (num1, num2) {
+  return num1 + num2
+}
+//不仅要有module 你还需要将写好的wxs导出 
+module.exports = {
+  name: name,
+  age: age,
+  sum: sum
+};
