@@ -1,3 +1,30 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello World</text>
 <button size="mini">按钮</button>
+<view>----------------------------------------------</view>
+<view class="box1" bind:touchstart="handleTouchStart" bind:touchmove="handleTouchMove" bind:touchcancel="handleTouchCancel" bind:touchend="handleTouchEnd" bind:tap="handleTap" bind:longpress="handleLongPress"></view>
+<!--event对象里面,changetouches 表示 发生变化的手指，touches表示，触发事件时，还有多少根手指-->
+<button id="btn2" bindtap="handleEventClick" bindtouchend="handleTouchEnd2" bindtouchstart="handleTouchStart2">事件点击</button>
+<!-- currentTarget用于记录触发事件的view ， target 用于记录产生事件的view -->
+<view class="outer" id="outer" bind:tap="handleOuterClick">外层view
+<view class="inner" id="inner" bind:tap="handleInnerClick">内层view
+</view>
+</view>
+<!-- 4.事件的传递参数 -->
+<view class="container">
+  <block wx:for="{{titles}}" wx:key="{{index}}">
+  <view class="item" bindtap="handleItemClick" 
+  data-index="{{index}}" data-item="{{item}}">
+  {{item}}
+  </view>
+  </block>
+</view>
+<!--5. 事件的冒泡和事件的捕获 -->
+<!-- bind一层层传递 -->
+<!-- catch阻止进一步的传递 -->
+<view class="view1" capture-bind:tap="handleCaptrueView1" bindtap="handleBindView1">
+  <view class="view2" capture-bind:tap="handleCaptrueView2" catchtap="handleBindView2">
+   <view class="view3" capture-bind:tap="handleCaptrueView3" bindtap="handleBindView3">
+   </view>
+  </view>
+</view>
